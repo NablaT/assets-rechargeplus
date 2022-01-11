@@ -1,0 +1,99 @@
+body {
+  font-family: Consolas, monaco, monospace;
+  display: flex;
+  flex-direction: column;
+  background: no-repeat
+    url(https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background-size: cover;
+}
+.container {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  height: 100%;
+}
+
+h1 {
+  color: #fecd39;
+}
+
+.card {
+  flex-direction: column;
+  background: white;
+  padding: 1em;
+  display: flex;
+  width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.description {
+  color: #163b48;
+  font-weight: bold;
+  margin: 1em;
+  text-align: justify;
+}
+
+.heading {
+  font-weight: 900;
+  color: #fecd39;
+}
+
+.actions {
+  color: #fecd39;
+  font-size: 4em;
+}
+
+.logo-container,
+.welcome-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-container {
+  flex-direction: column;
+}
+
+.logo-container > img {
+  width: 70%;
+}
+
+.fab:hover {
+    color: #dbb030;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    /* background-color: white;
+        background-image: none; */
+    /* font-size: 1.3em; */
+  }
+  .container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .card {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    box-shadow: initial;
+    padding: 0.5em;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  .container {
+    margin-left: 100px;
+  }
+}
