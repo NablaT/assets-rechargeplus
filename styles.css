@@ -2,8 +2,11 @@ body {
   font-family: Consolas, monaco, monospace;
   display: flex;
   flex-direction: column;
-  background: no-repeat
-    url(https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  background:linear-gradient(0deg, rgba(10, 1, 7, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+  /* background:linear-gradient(0deg, rgba(73, 73, 73, 0.3), rgba(68, 68, 68, 0.3)), url(https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); */
+
+  /* background: no-repeat
+    url(https://images.pexels.com/photos/3244513/pexels-photo-3244513.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); */
   background-size: cover;
 }
 .container {
@@ -19,15 +22,17 @@ h1 {
 
 .card {
   flex-direction: column;
-  background: white;
+  /* background: white; */
   padding: 1em;
   display: flex;
-  width: 500px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 400px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    border-radius: 50px;
 }
 
+/* #163b48; */
 .description {
-  color: #163b48;
+  color: white;
   font-weight: bold;
   margin: 1em;
   text-align: justify;
@@ -56,7 +61,7 @@ h1 {
 }
 
 .logo-container > img {
-  width: 70%;
+  width: 200px;
 }
 
 .fab:hover {
